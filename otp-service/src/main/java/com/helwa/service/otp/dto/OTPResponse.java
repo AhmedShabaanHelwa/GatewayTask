@@ -1,4 +1,4 @@
-package com.helwa.otpservice.dto;
+package com.helwa.service.otp.dto;
 
 public record OTPResponse(int statusCode) {
     // TODO: Possible improvement: To make status code as enum to enhance readability

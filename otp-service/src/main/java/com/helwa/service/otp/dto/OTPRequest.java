@@ -1,4 +1,4 @@
-package com.helwa.otpservice.dto;
+package com.helwa.service.otp.dto;
 
 public record OTPRequest (long otpValue) {
 }

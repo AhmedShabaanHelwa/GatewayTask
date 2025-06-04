@@ -1,7 +1,7 @@
-package com.helwa.otpservice.service;
+package com.helwa.service.otp.service;
 
-import com.helwa.otpservice.dto.OTPRequest;
-import com.helwa.otpservice.dto.OTPResponse;
+import com.helwa.service.otp.dto.OTPRequest;
+import com.helwa.service.otp.dto.OTPResponse;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 
