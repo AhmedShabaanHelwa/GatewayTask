@@ -1,4 +1,4 @@
-package com.helwa.gateway;
+package com.helwa.service.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

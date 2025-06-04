@@ -1,4 +1,4 @@
-package com.helwa.gateway;
+package com.helwa.service.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
