@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: otp
+server:
+  port: 7000
