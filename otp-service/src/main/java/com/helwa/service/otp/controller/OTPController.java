@@ -1,7 +1,7 @@
 package com.helwa.service.otp.controller;
 
 import com.helwa.service.otp.dto.OTPRequest;
-import com.helwa.service.otp.dto.OTPResponse;
+import com.helwa.service.otp.dto.OtpResponse;
 import com.helwa.service.otp.service.OtpService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +21,9 @@ public class OTPController {
     }
 
     @PostMapping("/validate")
-    public Mono<ResponseEntity<OTPResponse>> validateOtp(@RequestBody OTPRequest request) {
-        return Mono.just(ResponseEntity.ok(otpService.validateOtp(request)));
+    public Mono<ResponseEntity<OtpResponse>> validateOtp(@RequestBody OTPRequest request) {
+        return otpService.validateOtp(request)
+                .map(ResponseEntity::ok)
+                .defaultIfEmpty(ResponseEntity.badRequest().build());
     }
 }
