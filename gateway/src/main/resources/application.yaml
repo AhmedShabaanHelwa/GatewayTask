@@ -1,6 +1,16 @@
 spring:
   application:
     name: gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: OTPService
+              # Keep It Simple: Hardcoded but should be using service discovery
+              uri: http://localhost:7000
+              predicates:
+                - Path=/otp/**
 server:
   port: 9000
 
