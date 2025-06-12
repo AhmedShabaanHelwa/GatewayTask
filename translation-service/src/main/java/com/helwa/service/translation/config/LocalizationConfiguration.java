@@ -1,4 +1,4 @@
-package com.helwa.service.gateway.config;
+package com.helwa.service.translation.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
