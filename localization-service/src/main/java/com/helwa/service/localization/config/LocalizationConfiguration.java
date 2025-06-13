@@ -1,4 +1,4 @@
-package com.helwa.service.translation.config;
+package com.helwa.service.localization.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

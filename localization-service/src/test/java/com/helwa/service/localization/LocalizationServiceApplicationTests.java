@@ -1,10 +1,10 @@
-package com.helwa.service.translation;
+package com.helwa.service.localization;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TranslationServiceApplicationTests {
+class LocalizationServiceApplicationTests {
 
     @Test
     void contextLoads() {

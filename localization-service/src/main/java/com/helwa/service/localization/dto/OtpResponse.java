@@ -1,4 +1,4 @@
-package com.helwa.service.translation.dto;
+package com.helwa.service.localization.dto;
 
 public record OtpResponse(int statusCode, String message_ar, String message_en, String channel) {
 

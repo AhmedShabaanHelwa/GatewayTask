@@ -1,13 +1,13 @@
-package com.helwa.service.translation;
+package com.helwa.service.localization;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TranslationServiceApplication {
+public class LocalizationServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TranslationServiceApplication.class, args);
+        SpringApplication.run(LocalizationServiceApplication.class, args);
     }
 
 }

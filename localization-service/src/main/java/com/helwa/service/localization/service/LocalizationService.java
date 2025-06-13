@@ -1,7 +1,7 @@
-package com.helwa.service.translation.service;
+package com.helwa.service.localization.service;
 
-import com.helwa.service.translation.dto.OtpRequest;
-import com.helwa.service.translation.dto.OtpResponse;
+import com.helwa.service.localization.dto.OtpRequest;
+import com.helwa.service.localization.dto.OtpResponse;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.Locale;
 
 @Service
-public class TranslationService {
+public class LocalizationService {
 
     private final MessageSource messageSource;
 
-    public TranslationService(MessageSource messageSource) {
+    public LocalizationService(MessageSource messageSource) {
         this.messageSource = messageSource;
     }
 
