@@ -4,6 +4,7 @@ import com.helwa.service.otp.dto.OTPRequest;
 import com.helwa.service.otp.dto.OtpResponse;
 import com.helwa.service.otp.dto.OtpLocalizationRequest;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
@@ -14,11 +15,10 @@ import java.util.Random;
 public class OtpService {
 
     private final WebClient webClient;
-    private static final String LOCALIZATION_SERVICE_URL = "http://localhost:5000/translate";
 
-    public OtpService() {
+    public OtpService(@Value("${localizationService.url}") String localizationServiceUrl) {
         // TODO: Localization service url to be obtained dynamically using service discovery, Just hardcode it for now
-            webClient = WebClient.create(LOCALIZATION_SERVICE_URL);
+        webClient = WebClient.create(localizationServiceUrl);
     }
 
     @NotNull

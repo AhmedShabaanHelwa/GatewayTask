@@ -3,3 +3,5 @@ spring:
     name: otp
 server:
   port: 7000
+localizationService:
+  url: http://localhost:5000/localize
