@@ -18,7 +18,7 @@ public class LocalizationService {
     }
 
     @NotNull
-    public OtpResponse translate(@NotNull OtpRequest otpRequest, @NotNull String channel) {
+    public OtpResponse localize(@NotNull OtpRequest otpRequest, @NotNull String channel) {
 
         // Default to web if the channel is not specified
         if (channel.isEmpty()) {

@@ -28,7 +28,7 @@ public class OtpService {
         int statusCode = getRandomOTPStatus(otpRequest);
 
         Mono<OtpLocalizationRequest> otpLocalizationRequest = Mono.just(new OtpLocalizationRequest(statusCode));
-        return translate(otpLocalizationRequest);
+        return localize(otpLocalizationRequest);
     }
 
     private int getRandomOTPStatus(@NotNull OTPRequest otpRequest) {
@@ -38,7 +38,7 @@ public class OtpService {
     }
 
     @NotNull
-    private Mono<OtpResponse> translate(@NotNull Mono<OtpLocalizationRequest> otpLocalizationRequest) {
+    private Mono<OtpResponse> localize(@NotNull Mono<OtpLocalizationRequest> otpLocalizationRequest) {
 
         return webClient.post()
                 .uri("/otp")
